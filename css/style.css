@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'UA_CC_Elephantmen-Aged';
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #0C0C0C;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #2C2C2C;
+}
+.name{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1B1B;
+    font-size: 30px;
+    color: white;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #1B1B1B;
+    height: 25%;
+    width: 100%;
+}
+.buttons button{
+
+    width: 100%;
+    font-size: 24px;
+    padding: 5% 2% 6% 2%;
+    text-align: left;
+    background-color: #1B1B1B;
+    border: 0;
+    color: white;
+}
+.buttons button:hover{
+    background-color: #2C2C2C;
+    cursor: pointer;
+}
+.buttons button:focus{
+    color:#0C0C0C;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
+}
+.head{
+    height: 15%;
+    background-color: #2C2C2C;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.prof{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.us{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 50%;
+    justify-content: space-around;
+}
+.us label{
+    color: white;
+    font-size: 20px;
+}
+.us button{
+    border: 0;
+    background-color: #2C2C2C;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+}
+.us button:hover{
+    color:#1B1B1B;
+    cursor: pointer;
+}
+.dost{
+    width: 15%;
+    height: 90%;
+    display: flex;
+    
+    align-items: center;
+}
+.dost button{
+    color: white;
+    background-color: #0C0C0C;
+    font-size: 20px;
+    border: 0;
+    padding: 3% 6% 3% 6%;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
+box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.dost button:hover{
+    color: #0C0C0C;
+    background-color: white;
+}
+.result{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.uRes{
+    color: white;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    padding: 1% 2%;
+    border-radius: 15px;
+    margin-top: 1%;
+    font-size: 20px;
+}
+.right2{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.sozd{
+    width: 30%;
+    height: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.sozd p{
+    background-color: #2C2C2C;
+    padding: 4% 7%;
+    border-radius: 15px;
+}
+.sozdanie{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2C2C2C;
+    width: 60%;
+    height: 70%;
+    color: white;
+    font-size: 25px;
+    border-radius: 15px;
+}
+.sozdanie input{
+    font-size: 17px;
+    height: 10%;
+    padding: 1%;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid;
+    outline:none;
+}
+.sozdanie input:focus{
+    border:1px solid white;
+    box-shadow:0 0 7px white;
+}
+.sozdanie button{
+    color:white;
+    background-color: #1B1B1B;
+    font-size: 20px;
+    padding:2%;
+    border: 0;
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.sozdanie button:hover{
+    color: black;
+    background-color: white;
+}
+.right3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.myhab{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 20px;
+}
+
+.myhab p{
+    border-radius: 15px;
+    background-color: #2C2C2C;
+    padding: 1% 4%;
+}

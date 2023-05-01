@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>habit-tracker</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/IMG_20230430_181337_873.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="left">
+        <div class="name">
+            <p>Трекер привычек</p>
+        </div>
+        <div class="buttons">
+            <button onclick="sozdanie()">Создать привычку</button>
+            <button onclick="myhabit()">Мои привычки</button>
+            <button onclick="profile()">Ваш профиль</button>
+            <button onclick="vihod()"class="vihod"style="color: #CF6262;">Выйти из профиля</button>            
+        </div>
+        <img src="./img/Teacher.png" alt="">
+    </div>
+    <div class="right2">
+        <div class="sozd">
+            <p>Создать привычку</p>
+        </div>
+        <div class="sozdanie">
+            <label for="habit">Введите, какую привычку вы бы хотели приобрести</label>
+            <input type="text" id="habit" placeholder="Введите привычку">
+            <button>Сохранить</button>
+        </div>
+    <script>
+        function sozdanie(){
+            window.location.href="./sozdanie.html"
+        }
+        function profile(){
+            window.location.href="./profile.html"
+        }
+        function vihod(){
+            window.location.href="./vhod.html"
+        }
+        function myhabit(){
+            window.location.href="./myhabit.html"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>habit-tracker</title>
+    <link rel="stylesheet" href="./css/styleReg.css">
+    <link rel="icon" href="./img/IMG_20230430_181337_873.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="registr">
+        <p class="zag">Вход</p>
+        <div class="lp">
+            <div class="login">
+                <label for="LoginVhod">Логин</label>
+                <input class="vvod" type="text" id="LoginVhod" placeholder="Введите логин">
+            </div>
+            <div class="parol">
+                <label for="PassworVhod">Пароль</label>
+                <input class="vvod" type="password" id="PassworVhod" placeholder="Введите пароль">
+            </div>
+        </div>
+        <div class="knop">
+            <button>Войти</button>
+            <button onclick="registr()">Ещё нет аккаунта?</button>
+        </div>
+    </div>
+    <script>
+        function registr(){
+            window.location.href="./registration.html"
+        }
+    </script>
+</body>
+</html>
