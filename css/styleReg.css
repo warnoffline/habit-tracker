@@ -32,10 +32,11 @@ box-shadow: 10px 14px 4px 0px rgba(0, 0, 0, 0.2);
 .lp{
     width: 60%;
     height: 50%;
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 .login{
     height: 30%;
@@ -53,7 +54,7 @@ box-shadow: 10px 14px 4px 0px rgba(0, 0, 0, 0.2);
     font-size: 17px;
     height: 25%;
     padding: 5px;
-    width: 70%;
+    width: 100%;
     border-radius: 10px;
     border: 1px solid;
     outline:none;
@@ -68,7 +69,7 @@ box-shadow: 10px 14px 4px 0px rgba(0, 0, 0, 0.2);
     justify-content: space-between;
 }
 .knop button{
-    padding: 15px;
+    padding: 3% 6%;
     font-size: 15px;
     border-radius: 10px;
     border: 0;

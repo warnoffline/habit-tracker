@@ -4,15 +4,26 @@
     font-family: 'UA_CC_Elephantmen-Aged';
 }
 body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #0C0C0C;
     display: flex;
     flex-direction: row;
 }
+::-webkit-scrollbar {
+    width: 0;
+  }
 .left{
-    width: 20%;
-    height: 100%;
+    position: sticky;
+    width: 25%;
+    height: 100vh;
+    background-color: #2C2C2C;
+    top: 0;
+}
+.vnutrleft{
+    
+    width: 100%;
+    height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,6 +56,7 @@ body{
     background-color: #1B1B1B;
     border: 0;
     color: white;
+    cursor: pointer;
 }
 .buttons button:hover{
     background-color: #2C2C2C;
@@ -58,38 +70,41 @@ body{
     flex-direction: column;
     height: 100%;
     width:100%;
+    align-items: center;
 }
 .head{
-    height: 15%;
+    height: 6rem;
     background-color: #2C2C2C;
     width:100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .prof{
-    width: 20%;
+    width: 30%;
     height: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .us{
     display: flex;
     flex-direction: column;
+    align-items: start;
     width: 55%;
     height: 50%;
-    justify-content: space-around;
 }
 .us label{
     color: white;
     font-size: 20px;
+    margin-bottom: 5px;
 }
 .us button{
     border: 0;
     background-color: #2C2C2C;
-    padding: 5px;
     color: white;
     font-size: 15px;
+    cursor: pointer;
 }
 .us button:hover{
     color:#1B1B1B;
@@ -99,7 +114,6 @@ body{
     width: 15%;
     height: 90%;
     display: flex;
-    
     align-items: center;
 }
 .dost button{
@@ -107,11 +121,12 @@ body{
     background-color: #0C0C0C;
     font-size: 20px;
     border: 0;
-    padding: 3% 6% 3% 6%;
+    padding: 6%;
     border-radius: 15px;
+    cursor: pointer;
     -webkit-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
--moz-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
 }
 .dost button:hover{
     color: #0C0C0C;
@@ -129,7 +144,7 @@ box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
     background-color: #2C2C2C;
     display: flex;
     justify-content: center;
-    width: 15%;
+    width: 20%;
     padding: 1% 2%;
     border-radius: 15px;
     margin-top: 1%;
@@ -137,25 +152,23 @@ box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
 }
 .right2{
     width: 100%;
-    height: 60%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 .sozd{
-    width: 30%;
-    height: 20%;
     color: white;
+    background-color: #2C2C2C;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 20px;
-}
-.sozd p{
-    background-color: #2C2C2C;
-    padding: 4% 7%;
+    width: 20%;
+    padding: 1% 2%;
     border-radius: 15px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 20px;
 }
 .sozdanie{
     display: flex;
@@ -163,17 +176,17 @@ box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     align-items: center;
     background-color: #2C2C2C;
-    width: 60%;
-    height: 70%;
+    width: 80%;
+    height: 30rem;
     color: white;
     font-size: 25px;
     border-radius: 15px;
 }
 .sozdanie input{
     font-size: 17px;
-    height: 10%;
+    height: 7%;
     padding: 1%;
-    width: 70%;
+    width: 60%;
     border-radius: 10px;
     border: 1px solid;
     outline:none;
@@ -186,8 +199,9 @@ box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
     color:white;
     background-color: #1B1B1B;
     font-size: 20px;
-    padding:2%;
+    padding: 1.5% 3%;
     border: 0;
+    cursor: pointer;
     border-radius: 15px;
     -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
 -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
@@ -198,19 +212,21 @@ box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
     background-color: white;
 }
 .right3{
-    height: 100%;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .myhab{
-    width: 100%;
-    height: 10%;
+    color: white;
+    background-color: #2C2C2C;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color:white;
+    width: 20%;
+    padding: 1% 2%;
+    border-radius: 15px;
+    margin-top: 1%;
     font-size: 20px;
 }
 
@@ -218,4 +234,44 @@ box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     background-color: #2C2C2C;
     padding: 1% 4%;
+}
+.achievmentblock{
+    margin-top: 10px;
+    width: 70%;
+    height: 100%;
+    background-color: #2C2C2C;
+    border-radius: 15px;
+    -webkit-box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.achievmentknop{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ak{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lin{
+    width: 100%;
+    height:1px;
+    background-color: #0C0C0C;
+}
+.textc{
+    width: 70%;
+}
+.textc2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

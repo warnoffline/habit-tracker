@@ -6,56 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>habit-tracker</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/IMG_20230430_181337_873.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="icon" href="./img/free-icon-runner-10928117.png" type="image/x-icon">
 </head>
 <body>
     <div class="left">
-        <div class="name">
-            <p>Трекер привычек</p>
+        <div class="vnutrleft">
+            <div class="name">
+                <p>Трекер привычек</p>
+            </div>
+            <div class="buttons">
+                <button onclick="sozdanie()">Создать привычку</button>
+                <button onclick="myhabit()">Мои привычки</button>
+                <button onclick="profile()">Ваш профиль</button>
+                <button onclick="vihod()" class="vihod"style="color: #CF6262;">Выйти из профиля</button>            
+            </div>
+            <img src="./img/Teacher.svg" style="width:100%;" alt="">
         </div>
-        <div class="buttons">
-            <button onclick="sozdanie()">Создать привычку</button>
-            <button onclick="myhabit()">Мои привычки</button>
-            <button onclick="profile()">Ваш профиль</button>
-            <button onclick="vihod()" class="vihod"style="color: #CF6262;">Выйти из профиля</button>            
-        </div>
-        <img src="./img/Teacher.png" alt="">
     </div>
     <div class="right">
         <div class="head">
             <div class="prof">
-                <img src="./img/Group 4.png" alt="">
+                <img src="./img/Group 4.svg" alt="">
                 <div class="us">
                     <label>username</label>
-                    <button>Изменить профиль</button>
+                    <button data-btn="price">Изменить профиль</button>
                 </div>
             </div>
             <div class="dost">
-                <button>Достижения</button>
+                <button onclick="achiev()">Достижения</button>
             </div>
         </div>
         <div class="result">
             <div class="uRes">
                 <p>Ваш результат</p>
             </div>
-            <div>
-                <div></div>
+            <div class="textc2">
+                <div class="textc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum sem nec urna lobortis, et ullamcorper felis finibus. Suspendisse quis nunc condimentum ligula efficitur lobortis sit amet sed libero. Curabitur eget vehicula velit. Nullam ullamcorper nulla dolor, et rutrum erat vulputate et. Mauris tincidunt justo varius varius faucibus. Fusce sit amet velit a dolor sagittis pretium eget a justo. Vivamus pellentesque, dui vel mattis pellentesque, orci nisl egestas eros, et eleifend diam tellus quis massa. Quisque placerat elit nec arcu mattis, eget aliquet dolor vestibulum. Praesent metus velit, ullamcorper convallis purus consequat, elementum tincidunt ex. Suspendisse potenti. Pellentesque ac dapibus mi. Etiam nec urna porttitor, sodales libero feugiat, cursus sapien.
+
+Vivamus nec arcu non enim egestas vulputate ac sit amet nisi. Sed bibendum lacinia facilisis. Fusce ac diam condimentum, aliquam nunc dapibus, efficitur nisi. Quisque suscipit a tortor ut volutpat. Duis in turpis id ligula pulvinar euismod. Sed iaculis ut mi et tempus. Sed vitae mi finibus, porta magna a, porta tellus. Quisque dignissim massa sit amet faucibus condimentum. Duis blandit, nisl finibus porta fringilla, odio lectus consequat lacus, vel varius velit lectus porta lorem. Maecenas neque sem, finibus ac convallis ut, ornare ut enim. Vestibulum non fermentum sapien. Donec ac felis dui. Sed non lectus euismod, vehicula elit ut, dapibus urna.
+
+Mauris molestie sapien quis sapien ultrices, et maximus velit congue. Nam fermentum, leo ac efficitur vehicula, erat libero suscipit enim, sit amet varius dolor quam vitae metus. Nam posuere consectetur lorem quis interdum. Mauris eget consequat enim, et sollicitudin felis. Praesent mattis auctor erat et mollis. Donec pulvinar efficitur ex, et sollicitudin tellus ullamcorper eget. Etiam pretium elementum magna, nec vulputate ex porta ut. Cras auctor, lectus ut posuere convallis, arcu nulla volutpat magna, vitae tempus augue metus in elit. Donec in nunc sed felis viverra tincidunt eu a purus. Maecenas et diam lobortis elit porta aliquam.
+
+Duis faucibus, quam et convallis ornare, metus nibh fringilla augue, a volutpat nisl lorem ut arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vitae dolor nec turpis semper iaculis. Duis ultricies lorem vitae mi pretium, varius egestas massa pulvinar. Nullam ultrices cursus enim sit amet aliquet. Nullam sed convallis arcu, non vulputate dolor. Nullam dictum odio mauris, sodales aliquam quam consectetur ac. Mauris luctus tellus eget ligula rhoncus porttitor.
+
+Vestibulum vulputate auctor est sagittis feugiat. In magna urna, maximus vel aliquet vitae, semper eget eros. Sed et efficitur arcu. Vestibulum convallis mollis risus, in vestibulum sem luctus ac. Maecenas sed orci sapien. Phasellus rhoncus odio sed urna luctus, at accumsan lectus tincidunt. Vestibulum et turpis ipsum. Aenean nec lacus posuere, molestie odio rhoncus, venenatis mauris. Mauris ac nulla non magna faucibus porta id eget mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque semper risus ac dolor finibus porta. Curabitur luctus ante metus, quis vulputate neque faucibus a. Duis at odio orci.
+
+Phasellus mattis commodo efficitur. Nunc ullamcorper metus vel augue pretium, quis molestie diam interdum. In maximus tincidunt ipsum sit amet feugiat. Cras convallis sodales urna non commodo. Proin tincidunt ullamcorper laoreet. Nulla quis sodales velit. Vestibulum sit amet dui ut ante tincidunt finibus. Praesent a hendrerit nisi, a auctor mi. Vivamus consequat mi ex, ut rutrum elit congue eu. Duis a facilisis mi, in mattis velit. Donec tempor non mauris nec molestie. Cras pretium, metus tincidunt suscipit vestibulum, felis ante sollicitudin neque, id bibendum risus eros sit amet risus. Nulla faucibus turpis nec nibh euismod molestie. Duis bibendum tortor quis ultrices varius. Nullam condimentum venenatis semper. Quisque et ante quam.
+
+Fusce blandit feugiat urna, non egestas ipsum blandit non. Ut egestas imperdiet massa, sit amet gravida est cursus eget. Integer bibendum lacus at quam volutpat, non facilisis erat laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam dictum, dolor non lobortis placerat, elit lacus dapibus eros, vel laoreet odio dolor non dui. Nam auctor enim sed dui congue, et volutpat ipsum blandit. In hac habitasse platea dictumst.
+
+Aenean varius feugiat arcu vitae rhoncus. Fusce vel pulvinar nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed eu magna urna. In tempor dolor vitae ante tristique, a aliquam eros ultrices. Aenean vulputate urna vitae sem congue, et porta ante suscipit. Proin tincidunt ut elit et consectetur.
+
+Fusce mi lectus, tincidunt sed nunc at, viverra porttitor dui. Morbi malesuada finibus feugiat. Morbi vitae nibh id nibh facilisis fermentum vel vel turpis. Praesent pretium mollis ipsum, vel pulvinar lectus viverra sit amet. Sed finibus metus rutrum, elementum orci ut, convallis arcu. Integer vitae porta sem. Aenean pretium, mi ornare gravida eleifend, tellus odio rhoncus urna, eget rhoncus nisl diam vitae lorem. Aliquam erat volutpat. Nam neque ex, imperdiet a quam sed, placerat sodales enim. In faucibus tellus nec magna porttitor facilisis. Praesent sed fringilla lacus. Donec faucibus lacinia rutrum. Maecenas diam erat, viverra eget placerat non, fermentum sed quam. Suspendisse neque turpis, posuere at faucibus a, sagittis vel felis. Aenean euismod mauris tempus eros mollis, eu ultrices elit aliquam.
+
+Duis non dignissim tellus, non viverra lectus. Cras id lobortis erat. Aenean commodo ante et ante elementum pulvinar at a nibh. Suspendisse tincidunt turpis et rutrum tempor. Suspendisse mattis accumsan commodo. Maecenas consequat pharetra euismod. In turpis mauris, efficitur vel vulputate eu, facilisis in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi id erat leo.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum sem nec urna lobortis, et ullamcorper felis finibus. Suspendisse quis nunc condimentum ligula efficitur lobortis sit amet sed libero. Curabitur eget vehicula velit. Nullam ullamcorper nulla dolor, et rutrum erat vulputate et. Mauris tincidunt justo varius varius faucibus. Fusce sit amet velit a dolor sagittis pretium eget a justo. Vivamus pellentesque, dui vel mattis pellentesque, orci nisl egestas eros, et eleifend diam tellus quis massa. Quisque placerat elit nec arcu mattis, eget aliquet dolor vestibulum. Praesent metus velit, ullamcorper convallis purus consequat, elementum tincidunt ex. Suspendisse potenti. Pellentesque ac dapibus mi. Etiam nec urna porttitor, sodales libero feugiat, cursus sapien.
+
+Vivamus nec arcu non enim egestas vulputate ac sit amet nisi. Sed bibendum lacinia facilisis. Fusce ac diam condimentum, aliquam nunc dapibus, efficitur nisi. Quisque suscipit a tortor ut volutpat. Duis in turpis id ligula pulvinar euismod. Sed iaculis ut mi et tempus. Sed vitae mi finibus, porta magna a, porta tellus. Quisque dignissim massa sit amet faucibus condimentum. Duis blandit, nisl finibus porta fringilla, odio lectus consequat lacus, vel varius velit lectus porta lorem. Maecenas neque sem, finibus ac convallis ut, ornare ut enim. Vestibulum non fermentum sapien. Donec ac felis dui. Sed non lectus euismod, vehicula elit ut, dapibus urna.
+
+Mauris molestie sapien quis sapien ultrices, et maximus velit congue. Nam fermentum, leo ac efficitur vehicula, erat libero suscipit enim, sit amet varius dolor quam vitae metus. Nam posuere consectetur lorem quis interdum. Mauris eget consequat enim, et sollicitudin felis. Praesent mattis auctor erat et mollis. Donec pulvinar efficitur ex, et sollicitudin tellus ullamcorper eget. Etiam pretium elementum magna, nec vulputate ex porta ut. Cras auctor, lectus ut posuere convallis, arcu nulla volutpat magna, vitae tempus augue metus in elit. Donec in nunc sed felis viverra tincidunt eu a purus. Maecenas et diam lobortis elit porta aliquam.
+
+Duis faucibus, quam et convallis ornare, metus nibh fringilla augue, a volutpat nisl lorem ut arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vitae dolor nec turpis semper iaculis. Duis ultricies lorem vitae mi pretium, varius egestas massa pulvinar. Nullam ultrices cursus enim sit amet aliquet. Nullam sed convallis arcu, non vulputate dolor. Nullam dictum odio mauris, sodales aliquam quam consectetur ac. Mauris luctus tellus eget ligula rhoncus porttitor.
+
+Vestibulum vulputate auctor est sagittis feugiat. In magna urna, maximus vel aliquet vitae, semper eget eros. Sed et efficitur arcu. Vestibulum convallis mollis risus, in vestibulum sem luctus ac. Maecenas sed orci sapien. Phasellus rhoncus odio sed urna luctus, at accumsan lectus tincidunt. Vestibulum et turpis ipsum. Aenean nec lacus posuere, molestie odio rhoncus, venenatis mauris. Mauris ac nulla non magna faucibus porta id eget mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque semper risus ac dolor finibus porta. Curabitur luctus ante metus, quis vulputate neque faucibus a. Duis at odio orci.
+
+Phasellus mattis commodo efficitur. Nunc ullamcorper metus vel augue pretium, quis molestie diam interdum. In maximus tincidunt ipsum sit amet feugiat. Cras convallis sodales urna non commodo. Proin tincidunt ullamcorper laoreet. Nulla quis sodales velit. Vestibulum sit amet dui ut ante tincidunt finibus. Praesent a hendrerit nisi, a auctor mi. Vivamus consequat mi ex, ut rutrum elit congue eu. Duis a facilisis mi, in mattis velit. Donec tempor non mauris nec molestie. Cras pretium, metus tincidunt suscipit vestibulum, felis ante sollicitudin neque, id bibendum risus eros sit amet risus. Nulla faucibus turpis nec nibh euismod molestie. Duis bibendum tortor quis ultrices varius. Nullam condimentum venenatis semper. Quisque et ante quam.
+
+Fusce blandit feugiat urna, non egestas ipsum blandit non. Ut egestas imperdiet massa, sit amet gravida est cursus eget. Integer bibendum lacus at quam volutpat, non facilisis erat laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam dictum, dolor non lobortis placerat, elit lacus dapibus eros, vel laoreet odio dolor non dui. Nam auctor enim sed dui congue, et volutpat ipsum blandit. In hac habitasse platea dictumst.
+
+Aenean varius feugiat arcu vitae rhoncus. Fusce vel pulvinar nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed eu magna urna. In tempor dolor vitae ante tristique, a aliquam eros ultrices. Aenean vulputate urna vitae sem congue, et porta ante suscipit. Proin tincidunt ut elit et consectetur.
+
+Fusce mi lectus, tincidunt sed nunc at, viverra porttitor dui. Morbi malesuada finibus feugiat. Morbi vitae nibh id nibh facilisis fermentum vel vel turpis. Praesent pretium mollis ipsum, vel pulvinar lectus viverra sit amet. Sed finibus metus rutrum, elementum orci ut, convallis arcu. Integer vitae porta sem. Aenean pretium, mi ornare gravida eleifend, tellus odio rhoncus urna, eget rhoncus nisl diam vitae lorem. Aliquam erat volutpat. Nam neque ex, imperdiet a quam sed, placerat sodales enim. In faucibus tellus nec magna porttitor facilisis. Praesent sed fringilla lacus. Donec faucibus lacinia rutrum. Maecenas diam erat, viverra eget placerat non, fermentum sed quam. Suspendisse neque turpis, posuere at faucibus a, sagittis vel felis. Aenean euismod mauris tempus eros mollis, eu ultrices elit aliquam.
+
+Duis non dignissim tellus, non viverra lectus. Cras id lobortis erat. Aenean commodo ante et ante elementum pulvinar at a nibh. Suspendisse tincidunt turpis et rutrum tempor. Suspendisse mattis accumsan commodo. Maecenas consequat pharetra euismod. In turpis mauris, efficitur vel vulputate eu, facilisis in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi id erat leo.
+                </div>
             </div>
         </div>
     </div>
-    <script>
-        function sozdanie(){
-            window.location.href="./sozdanie.html"
-        }
-        function profile(){
-            window.location.href="./index.html"
-        }
-        function vihod(){
-            window.location.href="./vhod.html"
-        }
-        function myhabit(){
-            window.location.href="./myhabit.html"
-        }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./modal.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

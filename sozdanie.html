@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>habit-tracker</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/IMG_20230430_181337_873.jpg" type="image/x-icon">
+    <link rel="icon" href="./img/free-icon-runner-10928117.png" type="image/x-icon">
 </head>
 <body>
     <div class="left">
-        <div class="name">
-            <p>Трекер привычек</p>
+        <div class="vnutrleft">
+            <div class="name">
+                <p>Трекер привычек</p>
+            </div>
+            <div class="buttons">
+                <button onclick="sozdanie()">Создать привычку</button>
+                <button onclick="myhabit()">Мои привычки</button>
+                <button onclick="profile()">Ваш профиль</button>
+                <button onclick="vihod()" class="vihod"style="color: #CF6262;">Выйти из профиля</button>            
+            </div>
+            <img src="./img/Teacher.svg" style="width:100%;" alt="">
         </div>
-        <div class="buttons">
-            <button onclick="sozdanie()">Создать привычку</button>
-            <button onclick="myhabit()">Мои привычки</button>
-            <button onclick="profile()">Ваш профиль</button>
-            <button onclick="vihod()"class="vihod"style="color: #CF6262;">Выйти из профиля</button>            
-        </div>
-        <img src="./img/Teacher.png" alt="">
     </div>
     <div class="right2">
         <div class="sozd">
@@ -30,19 +32,6 @@
             <input type="text" id="habit" placeholder="Введите привычку">
             <button>Сохранить</button>
         </div>
-    <script>
-        function sozdanie(){
-            window.location.href="./sozdanie.html"
-        }
-        function profile(){
-            window.location.href="./index.html"
-        }
-        function vihod(){
-            window.location.href="./vhod.html"
-        }
-        function myhabit(){
-            window.location.href="./myhabit.html"
-        }
-    </script>
+        <script src="./script.js"></script>
 </body>
 </html>
