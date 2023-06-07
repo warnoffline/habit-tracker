@@ -86,3 +86,27 @@ box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
 -moz-box-shadow: -5px -5px 4px 0px rgba(0, 0, 0, 0.2);
 box-shadow: -5px -5px 4px 0px rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (max-width: 450px){
+    .registr{
+        width: 95%;
+    }
+    .zag{
+        font-size: 30px;
+    }
+    .knop{
+        width: 90%;
+    }
+    .knop button{
+        font-size: 15px;
+    }
+    .lp{
+        width: 100%;
+    }
+    .login{
+        width: 80%;
+    }
+    .parol{
+        width: 80%;
+    }
+}

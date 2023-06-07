@@ -262,6 +262,9 @@ box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
     justify-content: space-between;
     align-items: center;
 }
+.achievmentknop label{
+    color: #CF6262;
+}
 .lin{
     width: 100%;
     height:1px;
@@ -274,4 +277,109 @@ box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 450px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 3rem;
+    }
+    .vnutrleft{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+    .vnutrleft img{
+        display: none;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        background-color: none;
+        height: 100%;
+    }
+    .buttons button{
+        font-size: 10px;
+        width: 100%;
+        height: 100%;
+        padding: 3%;
+        text-align: center;
+    }
+    .name{
+        text-align: center;
+        font-size: 10px;
+        width: 25%;
+        height: 100%;
+        border-right: solid 1px #0C0C0C;
+    }
+    .sozd{
+        font-size: 18px;
+        width: 50%;
+        text-align: center;
+    }
+    .sozdanie{
+        width: 95%;
+        height: 20rem;
+    }
+    .sozdanie label{
+        font-size: 20px;
+        text-align: center;
+    }
+    .sozdanie input{
+        width: 70%;
+        font-size: 16px;
+    }
+    .sozdanie button{
+        font-size: 15px;
+        padding: 4% 6%;
+    }
+    .myhab{
+        font-size: 18px;
+        text-align: center;
+        width: 50%;
+    }
+    .head{
+        width: 100%;
+        height: 5rem;
+    }
+    .prof{
+        width:50%;
+    }
+    .prof img{
+        width: 30%;
+    }
+    .us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .us label{
+        font-size: 18px;
+    }
+    .us button{
+        font-size: 14px;
+    }
+    .dost{
+        width: 50%;
+        display: flex;
+        justify-content: end;
+    }
+    .dost button{
+        font-size: 15px;
+    }
+    .uRes{
+        font-size: 18px;
+        width: 50%;
+        text-align: center;
+    }
+    .achievmentblock{
+        width: 95%;
+        font-size: 13px;
+    }
 }
