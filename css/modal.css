@@ -1,5 +1,11 @@
 *{
-    font-family: 'UA_CC_Elephantmen-Aged';
+    font-family: 'UA_CC_Elephantmen-Aged' ;
+}
+@font-face {
+    font-family: 'UA_CC_Elephantmen-Aged' ;
+    src: url(../fonts/ua_cc_elephantmen_aged.ttf);
+    font-style: normal;
+    font-weight: normal;
 }
 .smodal.open .modal_back, .smodal.open .modal_window {
     opacity: 1;
@@ -40,7 +46,7 @@
     transition: background .4s ease-in;
 }
 .modal_window{
-    max-width: 50%;
+    width: 50%;
     height: 60%;
     border-radius: 20px;
     background-color: #2C2C2C;
@@ -108,14 +114,24 @@
     color: #0C0C0C;
     background-color: white;
 }
-@media (max-width: 900px){
+@media (max-width: 450px){
+    .modal_window{
+        width: 95%;
+        height: 50%;
+    }
     .modal-body{
-        justify-content:baseline;
-        flex-direction: column;
+        width: 100%;
     }
-    .modal-body a{
-        font-size: 16px;
+    .headerk{
+        font-size: 25px;
     }
-    .modal-window{
-    width: 100%;
-    }}
+    .modalvvod p{
+        text-align: center;
+    }
+    .modalvvod input{
+        width: 80%;
+    }
+    .modalknop{
+        width: 80%;
+    }
+}
