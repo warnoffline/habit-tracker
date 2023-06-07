@@ -268,7 +268,7 @@ box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
     justify-content: space-between;
     align-items: center;
 }
-.achievmentknop p{
+.achievmentknop label{
     color: #CF6262;
 }
 .lin{
