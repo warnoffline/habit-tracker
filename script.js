@@ -19,7 +19,9 @@ function registr(){
 function vhod(){
     window.location.href="./vhod.html"
 }
-
+function handleFormSubmit(event) {
+    event.preventDefault(); // Предотвращаем отправку формы 
+}
 
 const modal = $.modal({
     closable: true,

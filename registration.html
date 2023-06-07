@@ -9,23 +9,25 @@
     <link rel="icon" href="./img/free-icon-runner-10928117.png" type="image/x-icon">
 </head>
 <body>
-    <div class="registr">
-        <p class="zag">Регистрация</p>
-        <div class="lp">
-            <div class="login">
-                <label for="Login1">Логин</label>
-                <input class="vvod" id="Login1" type="text" placeholder="Введите логин">
+    <form action="#" class="formareg" onsubmit="handleFormSubmit(event)">
+        <div class="registr">
+            <p class="zag">Регистрация</p>
+            <div class="lp">
+                <div class="login">
+                    <label for="Login1">Логин</label>
+                    <input class="vvod" id="Login1" type="text" placeholder="Введите логин">
+                </div>
+                <div class="parol">
+                    <label for="Password1">Пароль</label>
+                    <input class="vvod" id="Password1" type="password" placeholder="Введите пароль">
+                </div>
             </div>
-            <div class="parol">
-                <label for="Password1">Пароль</label>
-                <input class="vvod" id="Password1" type="password" placeholder="Введите пароль">
+            <div class="knop">
+                <button onclick="profile()">Регистрация</button>
+                <button onclick="vhod()">Есть аккаунт?</button>
             </div>
         </div>
-        <div class="knop">
-            <button onclick="profile()">Регистрация</button>
-            <button onclick="vhod()">Есть аккаунт?</button>
-        </div>
-    </div>
+    </form>
     <script src="./script.js"></script>
 </body>
 </html>

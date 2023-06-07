@@ -29,11 +29,11 @@ function _createModal(options){
     modal.classList.add('smodal')
     modal.insertAdjacentHTML('afterbegin',`
     <div class="modal_back" data-close="true">
-        <div class="modal_window"> 
+        <form class="modal_window"> 
             <div class="modal-body" data-content>
                 ${options.content || ''}
             </div>
-        </div>
+        </form>
     </div>
     `)
     const footer = _createModalFooter(options.footerButtons)
