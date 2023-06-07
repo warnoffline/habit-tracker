@@ -268,7 +268,7 @@ box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
     justify-content: space-between;
     align-items: center;
 }
-.achievmentknop label{
+.achievmentknop p{
     color: #CF6262;
 }
 .lin{
@@ -333,7 +333,7 @@ box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
         width: 95%;
         height: 20rem;
     }
-    .sozdanie label{
+    .sozdanie p{
         font-size: 20px;
         text-align: center;
     }
